@@ -9,6 +9,7 @@ In this repository you'll find:
 - Plasma Color Schemes
 - Plasma Desktop Themes
 - Plasma Look-and-Feel Settings
+- Plasma konsole Color Schemes
 
 - Added a desktop layout, just like the desktop layout in the figure, people who need can use
 
@@ -24,6 +25,8 @@ In this repository you'll find:
  - Fix lock screen black screen problem
  -  Add wallpapers and configuration files
     After selecting your favorite color wallpaper, remove the suffix color abbreviation and install it
+    
+- Added konsole color schemes
   
 
 ## Installation

@@ -12,6 +12,7 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
   LOOKFEEL_DIR="/usr/share/plasma/look-and-feel"
   KVANTUM_DIR="/usr/share/Kvantum"
   WALLPAPER_DIR="/usr/share/wallpapers"
+  KONSOLE_DIR="/usr/share/konsole"
 else
   AURORAE_DIR="$HOME/.local/share/aurorae/themes"
   SCHEMES_DIR="$HOME/.local/share/color-schemes"
@@ -20,6 +21,7 @@ else
   LOOKFEEL_DIR="$HOME/.local/share/plasma/look-and-feel"
   KVANTUM_DIR="$HOME/.config/Kvantum"
   WALLPAPER_DIR="$HOME/.local/share/wallpapers"
+  KONSOLE_DIR="$HOME/.local/share/konsole"
 fi
 
 THEME_NAME=We10XOS
@@ -30,6 +32,7 @@ THEME_NAME=We10XOS
 [[ ! -d ${LOOKFEEL_DIR} ]] && mkdir -p ${LOOKFEEL_DIR}
 [[ ! -d ${KVANTUM_DIR} ]] && mkdir -p ${KVANTUM_DIR}
 [[ ! -d ${WALLPAPER_DIR} ]] && mkdir -p ${WALLPAPER_DIR}
+[[ ! -d ${KONSOLE_DIR} ]] && mkdir -p ${KONSOLE_DIR}
 
 install() {
   local name=${1}
@@ -40,6 +43,7 @@ install() {
   cp -r ${SRC_DIR}/plasma/desktoptheme/*                                             ${PLASMA_DIR}
   cp -r ${SRC_DIR}/plasma/look-and-feel/*                                            ${LOOKFEEL_DIR}
   cp -r ${SRC_DIR}/wallpaper/*                                                       ${WALLPAPER_DIR}
+  cp -r ${SRC_DIR}/konsole/*                                                         ${KONSOLE_DIR}
 }
 
 echo "Installing '${THEME_NAME} kde themes'..."
